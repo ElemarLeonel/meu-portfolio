@@ -5,9 +5,9 @@ export default function Hero() {
         <div className="hero min-h-screen bg-tertiary">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img src={ElemarPerfil} 
-                className="max-w-sm rounded-lg shadow-2xl" />
-                <div>
-                    <h1 className="text-5xl font-bold font-cursive text-primary">
+                className="w-auto sm:max-w-sm rounded-lg shadow-2xl" />
+                <div className="flex flex-col items-center">
+                    <h1 className="text-5xl font-bold font-cursive text-primary md:text-center lg:text-start">
                         Elemar Leonel
                     </h1>
                     <p className="py-6 font-sans">
@@ -18,7 +18,7 @@ export default function Hero() {
                         em busca de novas tecnologias e tendências e procuro
                         aperfeiçoar constantemente minhas habilidades.
                     </p>
-                    <button className="btn btn-secondary">
+                    <button className="btn btn-secondary w-3/4 md:w-1/2">
                         <a href="https://api.whatsapp.com/send?phone=5569981066962&text=Oi." 
                         className="text-primary font-sans">
                             Entre em Contato

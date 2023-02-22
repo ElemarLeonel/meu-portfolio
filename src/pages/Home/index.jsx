@@ -4,12 +4,12 @@ import Projects from '../../components/Projects'
 import Footer from '../../components/Footer'
 
 const Home = () => {
-    return(
+    return (
         <>
-        <Navbar />
-        <Hero />
-        <Projects />
-        <Footer />
+            <Navbar />
+            <Hero />
+            <Projects />
+            <Footer />
         </>
     )
 }
