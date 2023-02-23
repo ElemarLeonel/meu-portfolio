@@ -5,7 +5,7 @@ export default function Projects() {
         <div className="flex-col bg-gray-200 p-4">
             <div className="mb-10 mt-10">
                 <h1 className="text-primary text-center font-bold text-3xl
-                font-cursive">
+                font-sans">
                     Projetos
                 </h1>
             </div>

@@ -2,12 +2,14 @@ import ElemarPerfil from '../../assets/images/ElemarPerfil.jpg';
 
 export default function Hero() {
     return (
-        <div className="hero min-h-screen bg-tertiary">
+        <div className="hero min-h-screen bg-accent">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img src={ElemarPerfil} 
-                className="w-auto sm:max-w-sm rounded-lg shadow-2xl" />
-                <div className="flex flex-col items-center">
-                    <h1 className="text-5xl font-bold font-cursive text-primary md:text-center lg:text-start">
+                className="w-auto sm:max-w-sm rounded-lg shadow-2xl" 
+                width={300}
+                height={300}/>
+                <div className="flex flex-col items-center md:items-start">
+                    <h1 className="text-5xl font-bold font-sans text-primary">
                         Elemar Leonel
                     </h1>
                     <p className="py-6 font-sans">
