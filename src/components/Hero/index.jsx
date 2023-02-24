@@ -1,4 +1,4 @@
-import ElemarPerfil from '../../assets/images/ElemarPerfil.jpg';
+import ElemarPerfil from '../../assets/images/ElemarPerfil.webp';
 
 export default function Hero() {
     return (
