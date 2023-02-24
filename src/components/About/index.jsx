@@ -8,13 +8,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 export default function About() {
 
     return (
-        <section className="flex flex-col items-center bg-secondary p-10 gap-5">
+        <section className="flex flex-col items-center bg-secondary p-10 gap-5"
+            id="about">
             <div>
                 <h1 className="text-3xl font-sans font-bold text-primary">
                     Sobre Mim
                 </h1>
             </div>
-            <div className="w-1/2">
+            <div className="w-6/8 sm:w-1/2">
                 <ol class="relative border-l border-gray-200">
                     <li class="mb-10 ml-6">
                         <span class="absolute flex items-center justify-center w-6 
@@ -70,7 +71,7 @@ export default function About() {
                     text-accent">
                             2016
                         </time>
-                        <p class="text-base ml-2 font-normal text-gray-500">
+                        <p class="text-base ml-2 font-normal text-primary">
                             Ao final do meu 3º ano do Ensino Médio, com uns 17 anos 
                             de idade, um colega me falou que iria fazer uma faculdade 
                             na área de tecnologia e perguntou se iria fazer junto com ele. 

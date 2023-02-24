@@ -14,7 +14,7 @@ export default function Footer() {
                 <a className="btn btn-ghost normal-case text-xl text-primary">
                     dev.elemarleonel
                 </a>
-                <p className="text-blue-900">
+                <p className="text-blue-900 text-center">
                     Copyright © 2023 - Todos os Direitos Reservados
                 </p>
             </div>

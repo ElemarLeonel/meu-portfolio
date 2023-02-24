@@ -6,7 +6,7 @@ export const projects = [
         image: SiteJN,
         alt: "Imagem do Site da JN Saúde e Segurança do Trabalho",
         title: "JN Saúde e Segurança do Trabalho",
-        description: "Quando sair novos projetos colocarei aqui",
+        description: "Projeto realizado com React e MUI.",
         link: "https://www.jnsst.com.br/"
     },
     {
