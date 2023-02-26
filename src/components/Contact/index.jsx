@@ -3,7 +3,7 @@ export default function Contact() {
         <section class="bg-accent dark:bg-primary" id="contact">
             <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold 
-                text-center text-primary dark:text-accent">
+                text-center text-primary dark:text-secondary">
                     Entre em contato
                 </h2>
                 <p class="mb-8 lg:mb-16 font-light text-center text-primary 
@@ -31,7 +31,7 @@ export default function Contact() {
                     </div>
                     <div>
                         <label for="subject" class="block mb-2 text-sm 
-                        font-bold text-primary dark:text-accent">
+                        font-bold text-primary dark:text-secondary">
                             Assunto
                         </label>
                         <input type="text" id="subject" 
@@ -47,7 +47,7 @@ export default function Contact() {
                     </div>
                     <div class="sm:col-span-2">
                         <label for="message" class="block mb-2 text-sm 
-                        font-bold text-primary dark:text-accent">
+                        font-bold text-primary dark:text-secondary">
                             Sua mensagem
                         </label>
                         <textarea id="message" rows="6" 
@@ -61,9 +61,11 @@ export default function Contact() {
                         </textarea>
                     </div>
                     <button type="submit" 
-                    class="py-3 px-5 text-sm font-medium 
-                    text-center text-secondary rounded-lg bg-primary 
-                    sm:w-fit hover:bg-secondary hover:text-primary">
+                    class="py-3 px-5 text-sm font-medium sm:w-fit
+                    text-center rounded-lg 
+                    text-secondary bg-primary
+                    dark:bg-secondary dark:text-primary
+                    hover:bg-accent hover:dark:bg-accent">
                         Enviar Mensagem
                     </button>
                 </form>

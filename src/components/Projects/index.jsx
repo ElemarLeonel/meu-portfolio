@@ -2,16 +2,17 @@ import { projects } from "./projects"
 
 export default function Projects() {
     return (
-        <section className="flex-col bg-gray-200 p-4" id="projects">
+        <section className="flex-col bg-accent dark:bg-primary p-4" id="projects">
             <div className="mb-10 mt-10">
                 <h1 className="text-primary text-center font-bold text-3xl
-                font-sans">
+                dark:text-secondary">
                     Projetos
                 </h1>
             </div>
             <div className="flex flex-row flex-wrap gap-5 justify-between mx-10 my-10">
                 {projects.map((project) => (
-                    <div className="card w-96 sm:w-1/2 md:w-1/4 hover:bg-secondary bg-base-100 shadow-xl">
+                    <div className="card w-96 sm:w-1/2 md:w-1/4 bg-accent 
+                    hover:bg-secondary shadow-xl">
                         <figure className="px-10 pt-10">
                             <img src={project.image} alt={project.alt}
                                 className="rounded-xl" />

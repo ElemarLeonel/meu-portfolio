@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js,ts,tsx,jsx}"],
   darkMode: "class",
+  content: ["./src/**/*.{js,ts,tsx,jsx}", "./public/index.html"],
   daisyui: {
     themes: [
       {
