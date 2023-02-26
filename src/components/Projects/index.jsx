@@ -2,7 +2,7 @@ import { projects } from "./projects"
 
 export default function Projects() {
     return (
-        <section className="flex-col bg-accent dark:bg-primary p-4" id="projects">
+        <section className="flex-col bg-gray-200 dark:bg-primary p-4" id="projects">
             <div className="mb-10 mt-10">
                 <h1 className="text-primary text-center font-bold text-3xl
                 dark:text-secondary">
