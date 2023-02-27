@@ -5,13 +5,16 @@ import {
     faInstagram
 } from "@fortawesome/free-brands-svg-icons"
 
+import 'animate.css'
+import { AnimationOnScroll } from "react-animation-on-scroll"
+
 export default function Footer() {
     return (
-            <footer className="flex flex-col md:flex-row justify-between 
+        <footer className="flex flex-col md:flex-row justify-between 
             gap-5 p-5 bg-secondary dark:bg-primary">
             <div className="flex flex-col md:flex-row justify-center items-center">
                 <a className="btn btn-ghost normal-case text-xl text-primary
-                dark:text-secondary">
+                    dark:text-secondary">
                     dev.elemarleonel
                 </a>
                 <p className="text-primary dark:text-accent text-center">
