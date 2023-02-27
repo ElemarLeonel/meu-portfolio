@@ -12,7 +12,7 @@ export default function Navbar() {
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost btn-circle 
                     swap swap-rotate">
-                        <input type="checkbox" hidden />
+                        <input type="checkbox" hidden/>
                         <FontAwesomeIcon icon={faBars}
                             className="w-5 h-5 swap-off text-secondary" />
                         <FontAwesomeIcon icon={faCircleXmark}
@@ -36,7 +36,7 @@ export default function Navbar() {
             </div>
             <div className="navbar-end">
                 <label className="swap swap-rotate">
-                    <input type="checkbox" />
+                    <input type="checkbox" hidden/>
 
                     {theme === "light" ? (
                     <svg className="swap-off fill-current w-6 h-6 text-secondary" 

@@ -17,10 +17,10 @@ export default function About() {
         dark:bg-primary p-10 gap-5" id="about">
             <div>
                 <AnimationOnScroll animateIn="animate__backInDown">
-                    <h1 className="text-3xl font-sans font-bold text-primary 
+                    <h2 className="text-3xl font-sans font-bold text-primary 
                     dark:text-secondary">
                         Sobre Mim
-                    </h1>
+                    </h2>
                 </AnimationOnScroll>
             </div>
             <div className="w-6/8 sm:w-1/2">

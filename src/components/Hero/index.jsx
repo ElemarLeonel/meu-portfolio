@@ -8,7 +8,8 @@ export default function Hero() {
                     className="w-auto sm:max-w-sm rounded-lg shadow-2xl
                 dark:border-4 dark:border-accent"
                     width={300}
-                    height={300} />
+                    height={300} 
+                    alt="Foto do Desenvolvedor Elemar Leonel com terno"/>
                 <div className="flex flex-col items-center md:items-start">
                     <h1 className="text-5xl font-bold font-sans text-primary
                     dark:text-secondary">
