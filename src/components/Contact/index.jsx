@@ -3,32 +3,32 @@ import { AnimationOnScroll } from "react-animation-on-scroll"
 
 export default function Contact() {
     return (
-        <section class="bg-accent dark:bg-primary" id="contact">
-            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <section className="bg-accent dark:bg-primary" id="contact">
+            <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <AnimationOnScroll animateIn="animate__slideInRight">
-                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold 
+                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold 
                     text-center text-primary dark:text-secondary">
                         Entre em contato
                     </h2>
                 </AnimationOnScroll>
                 <AnimationOnScroll animateIn="animate__slideInRight">
-                    <p class="mb-8 lg:mb-16 font-light text-center text-primary 
+                    <p className="mb-8 lg:mb-16 font-light text-center text-primary 
                     dark:text-accent sm:text-xl">
                         Está precisando alavancar sua empresa no digital? Você pode estar
                         entrando em contato comigo para saber mais e tirar as suas dúvidas.
                         Vai ser um prazer poder te ajudar!
                     </p>
                 </AnimationOnScroll>
-                <form action="#" class="space-y-8">
+                <form action="#" className="space-y-8">
                     <div className="flex flex-col gap-8">
                         <div>
                             <AnimationOnScroll animateIn="animate__slideInUp">
-                                <label for="email" class="block mb-2 text-sm font-bold 
+                                <label htmlFor="email" className="block mb-2 text-sm font-bold 
                                 text-primary dark:text-secondary">
                                     Seu email
                                 </label>
                                 <input type="email" id="email"
-                                    class="shadow-sm bg-gray-50 border 
+                                    className="shadow-sm bg-gray-50 border 
                                   border-gray-300 text-primary text-sm 
                                     rounded-lg focus:ring-primary-500 
                                     focus:border-primary-500 block w-full p-2.5 
@@ -41,12 +41,12 @@ export default function Contact() {
                         </div>
                         <div>
                             <AnimationOnScroll animateIn="animate__slideInUp">
-                                <label for="subject" class="block mb-2 text-sm 
+                                <label htmlFor="subject" className="block mb-2 text-sm 
                                 font-bold text-primary dark:text-secondary">
                                     Assunto
                                 </label>
                                 <input type="text" id="subject"
-                                    class="block p-3 w-full text-sm text-primary 
+                                    className="block p-3 w-full text-sm text-primary 
                                   bg-gray-50 rounded-lg border border-gray-300 
                                     shadow-sm focus:ring-primary-500 focus:border-primary-500 
                                   dark:bg-gray-700 dark:border-gray-600 
@@ -57,14 +57,14 @@ export default function Contact() {
                                     required />
                             </AnimationOnScroll>
                         </div>
-                        <div class="sm:col-span-2">
+                        <div className="sm:col-span-2">
                             <AnimationOnScroll animateIn="animate__slideInUp">
-                                <label for="message" class="block mb-2 text-sm 
+                                <label htmlFor="message" className="block mb-2 text-sm 
                                 font-bold text-primary dark:text-secondary">
                                     Sua mensagem
                                 </label>
                                 <textarea id="message" rows="6"
-                                    class="block p-2.5 w-full text-sm 
+                                    className="block p-2.5 w-full text-sm 
                                     text-primary bg-gray-50 rounded-lg 
                                     shadow-sm border border-gray-300 
                                     focus:ring-primary-500 focus:border-primary-500 
@@ -78,7 +78,7 @@ export default function Contact() {
                     <div className="flex justify-end">
                         <AnimationOnScroll animateIn="animate__slideInUp">
                             <button type="submit"
-                                class="py-3 px-5 text-sm font-medium sm:w-fit
+                                className="py-3 px-5 text-sm font-medium sm:w-fit
                                 text-center rounded-lg 
                                 text-secondary bg-primary
                                 dark:bg-secondary dark:text-primary

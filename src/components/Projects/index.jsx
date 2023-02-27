@@ -16,11 +16,13 @@ export default function Projects() {
             <div className="flex flex-row flex-wrap gap-5 justify-between mx-10 my-10">
                 {projects.map((project) => (
                     <div className="card w-96 sm:w-1/2 md:w-1/4 bg-accent 
-                    hover:bg-secondary shadow-xl">
+                    hover:bg-secondary shadow-xl" key={project.key}>
                         <AnimationOnScroll animateIn="animate__fadeInUp">
                             <figure className="px-10 pt-10">
                                 <img src={project.image} alt={project.alt}
-                                    className="rounded-xl" />
+                                    className="rounded-xl" 
+                                    width={project.width}
+                                    height={project.height} />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title font-sans font-bold text-primary">
