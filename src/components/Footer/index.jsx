@@ -22,23 +22,24 @@ export default function Footer() {
                 </p>
             </div>
             <div className="flex flex-row md:justify-between justify-center gap-5 p-4">
-                <a className="https://github.com/ElemarLeonel"
-                aria-label="Link do Github do Desenvolvedor Elemar">
+                <a className="https://github.com/ElemarLeonel">
                     <FontAwesomeIcon icon={faGithub} size="2x"
                         className="hover:text-accent text-primary
-                        dark:text-secondary dark:hover:text-accent" />
+                        dark:text-secondary dark:hover:text-accent" 
+                        aria-label="Link do Github do Desenvolvedor Elemar"/>
                 </a>
                 <a href="https://www.linkedin.com/in/elemarleonel/"
                 aria-label="Link do Linkedin do Desenvolvedor Elemar">
                     <FontAwesomeIcon icon={faLinkedin} size="2x"
                         className="hover:text-accent text-primary
-                        dark:text-secondary dark:hover:text-accent" />
+                        dark:text-secondary dark:hover:text-accent" 
+                        aria-label="Link do Linkedin do Desenvolvedor Elemar"/>
                 </a>
-                <a href="https://www.instagram.com/dev.elemarleonel/"
-                aria-label="Link do Instagram do Desenvolvedor Elemar">
+                <a href="https://www.instagram.com/dev.elemarleonel/">
                     <FontAwesomeIcon icon={faInstagram} size="2x"
                         className="hover:text-accent text-primary
-                        dark:text-secondary dark:hover:text-accent" />
+                        dark:text-secondary dark:hover:text-accent" 
+                        aria-label="Link do Github do Desenvolvedor Elemar"/>
                 </a>
             </div>
         </footer>
