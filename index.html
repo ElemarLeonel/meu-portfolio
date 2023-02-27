@@ -17,13 +17,18 @@
   <!-- Preload Images -->
   <link rel="preload" href="/src/assets/images/*.webp" as="image">
   <link rel="stylesheet"
+    as="style"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    onload="this.onload=null;this.rel='stylesheet'"
   />
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  </noscript>
 </body>
 
 </html>
