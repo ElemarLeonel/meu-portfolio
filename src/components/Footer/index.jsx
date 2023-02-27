@@ -5,9 +5,6 @@ import {
     faInstagram
 } from "@fortawesome/free-brands-svg-icons"
 
-import 'animate.css'
-import { AnimationOnScroll } from "react-animation-on-scroll"
-
 export default function Footer() {
     return (
         <footer className="flex flex-col md:flex-row justify-between 
