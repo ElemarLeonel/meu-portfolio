@@ -7,15 +7,18 @@ export default function Switcher() {
     return (
         <>
             {theme === 'dark' ? (
-                <input type="checkbox"
-                    onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                    className="toggle toggle-primary dark:toggle-secondary"
-                    checked />
+                    <input type="checkbox"
+                        aria-label="Dark Theme"
+                        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                        className="toggle toggle-primary dark:toggle-secondary"/>
             ) : (
-                <input type="checkbox"
-                    onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                    className="toggle toggle-primary dark:toggle-secondary"
-                    onChange={() => setChecked(false)}/>
+                <label>
+                    <input type="checkbox-light"
+                        aria-label="Light Theme"
+                        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                        className="toggle toggle-primary dark:toggle-secondary"
+                        onChange={() => setChecked(false)}/>
+                </label>
             )}
         </>
     )
