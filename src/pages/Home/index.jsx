@@ -1,25 +1,20 @@
-import { Suspense, lazy } from 'react'
 import Navbar from '../../components/Navbar'
 import Hero from '../../components/Hero'
+import About from '../../components/About'
+import Features from '../../components/Features'
+import Projects from '../../components/Projects'
+import Contact from '../../components/Contact'
 import Footer from '../../components/Footer'
-import Spinner from '../../components/Spinner'
-
-const About = lazy(() => import('../../components/About'))
-const Features = lazy(() => import('../../components/Features'))
-const Projects = lazy(() => import('../../components/Projects'))
-const Contact = lazy(() => import('../../components/Contact'))
 
 const Home = () => {
     return (
         <>
             <Navbar />
-            <Suspense fallback={<Spinner />} >
-                <Hero />
-                <About />
-                <Features />
-                <Projects />
-                <Contact />
-            </Suspense>
+            <Hero />
+            <About />
+            <Features />
+            <Projects />
+            <Contact />
             <Footer />
         </>
     )

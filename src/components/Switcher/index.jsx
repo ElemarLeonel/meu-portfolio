@@ -10,15 +10,14 @@ export default function Switcher() {
                     <input type="checkbox"
                         aria-label="Dark Theme"
                         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                        className="toggle toggle-primary dark:toggle-secondary"/>
+                        className="toggle toggle-primary dark:toggle-secondary"
+                        checked/>
             ) : (
-                <label>
                     <input type="checkbox-light"
                         aria-label="Light Theme"
                         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                         className="toggle toggle-primary dark:toggle-secondary"
                         onChange={() => setChecked(false)}/>
-                </label>
             )}
         </>
     )

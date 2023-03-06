@@ -1,6 +1,33 @@
+import React from 'react'
 import { AnimationOnScroll } from "react-animation-on-scroll"
+import sendEmail from '../../services/email';
 
 export default function Contact() {
+
+    const [fields, setFields] = React.useState({
+        fullname: '',
+        email: '',
+        subject: '',
+        message: ''
+    })
+
+    function handleInputChange(event) {
+        fields[event.target.name] = event.target.value
+        setFields(fields)
+    }
+
+    function handleFormSubmit(event) {
+        event.preventDefault()
+        sendEmail(fields)
+
+        setFields({
+            fullname: '',
+            email: '',
+            subject: '',
+            message: ''
+        })
+    }
+
     return (
         <section className="bg-accent dark:bg-primary" id="contact">
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -18,15 +45,15 @@ export default function Contact() {
                         Vai ser um prazer poder te ajudar!
                     </p>
                 </AnimationOnScroll>
-                <form action="#" className="space-y-8">
+                <form className="space-y-8" onSubmit={handleFormSubmit}>
                     <div className="flex flex-col gap-8">
                         <div>
                             <AnimationOnScroll animateIn="animate__slideInUp">
-                                <label htmlFor="email" className="block mb-2 text-sm font-bold 
+                                <label htmlFor="fullname" className="block mb-2 text-sm font-bold 
                                 text-primary dark:text-secondary">
-                                    Seu email
+                                    Seu Nome Completo
                                 </label>
-                                <input type="email" id="email"
+                                <input type="text" id="fullname" name="fullname"
                                     className="shadow-sm bg-gray-50 border 
                                   border-gray-300 text-primary text-sm 
                                     rounded-lg focus:ring-primary-500 
@@ -35,7 +62,27 @@ export default function Contact() {
                                   dark:placeholder-gray-400 dark:text-accent 
                                     dark:focus:ring-primary-500 dark:focus:border-primary-500 
                                     dark:shadow-sm-light"
-                                    placeholder="exemplo@exemplo.com" required />
+                                    placeholder="Elemar Leonel" required 
+                                    onChange={handleInputChange}/>
+                            </AnimationOnScroll>
+                        </div>
+                        <div>
+                            <AnimationOnScroll animateIn="animate__slideInUp">
+                                <label htmlFor="email" className="block mb-2 text-sm font-bold 
+                                text-primary dark:text-secondary">
+                                    Seu email
+                                </label>
+                                <input type="email" id="email" name="email"
+                                    className="shadow-sm bg-gray-50 border 
+                                  border-gray-300 text-primary text-sm 
+                                    rounded-lg focus:ring-primary-500 
+                                    focus:border-primary-500 block w-full p-2.5 
+                                  dark:bg-gray-700 dark:border-gray-600 
+                                  dark:placeholder-gray-400 dark:text-accent 
+                                    dark:focus:ring-primary-500 dark:focus:border-primary-500 
+                                    dark:shadow-sm-light"
+                                    placeholder="exemple@example.com" required 
+                                    onChange={handleInputChange}/>
                             </AnimationOnScroll>
                         </div>
                         <div>
@@ -44,7 +91,7 @@ export default function Contact() {
                                 font-bold text-primary dark:text-secondary">
                                     Assunto
                                 </label>
-                                <input type="text" id="subject"
+                                <input type="text" id="subject" name="subject"
                                     className="block p-3 w-full text-sm text-primary 
                                   bg-gray-50 rounded-lg border border-gray-300 
                                     shadow-sm focus:ring-primary-500 focus:border-primary-500 
@@ -53,7 +100,7 @@ export default function Contact() {
                                     dark:focus:ring-primary-500 dark:focus:border-primary-500 
                                     dark:shadow-sm-light"
                                     placeholder="Deixe-nos saber como podemos ajudá-lo"
-                                    required />
+                                    required onChange={handleInputChange}/>
                             </AnimationOnScroll>
                         </div>
                         <div className="sm:col-span-2">
@@ -62,14 +109,15 @@ export default function Contact() {
                                 font-bold text-primary dark:text-secondary">
                                     Sua mensagem
                                 </label>
-                                <textarea id="message" rows="6"
+                                <textarea id="message" rows="6" name="message"
                                     className="block p-2.5 w-full text-sm 
                                     text-primary bg-gray-50 rounded-lg 
                                     shadow-sm border border-gray-300 
                                     focus:ring-primary-500 focus:border-primary-500 
                                   dark:bg-gray-700 dark:border-gray-600 
                                   dark:placeholder-gray-400 dark:text-white"
-                                    placeholder="Deixe um comentário...">
+                                    placeholder="Deixe um comentário..."
+                                    onChange={handleInputChange}>
                                 </textarea>
                             </AnimationOnScroll>
                         </div>
