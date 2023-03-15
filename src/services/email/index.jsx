@@ -1,4 +1,5 @@
 import api from '../../api/api'
+import { toast } from "react-toastify";
 
 export default async function sendEmail(fields) {
 
@@ -8,9 +9,15 @@ export default async function sendEmail(fields) {
         }
     })
         .then((response) => {
+            toast("Mensagem enviada com sucesso", {
+                type: 'success',
+            })
             return response.data
         })
         .catch((error) => {
+            toast("Erro ao enviar a mensagem", {
+                type: 'error',
+            })
             return error.message
         })
 }
