@@ -26,6 +26,7 @@ export default function Contact() {
             subject: '',
             message: ''
         })
+        setIsDisabled(false)
     }
 
     return (
