@@ -6,7 +6,7 @@ export default async function sendEmail(fields) {
     await api.post("/send/email", fields, {
         headers: {
             'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': 'https://www.elemarleonel.com.br'
+            'Access-Control-Allow-Origin': 'https://elemarleonel.com.br'
         }
     })
         .then((response) => {
