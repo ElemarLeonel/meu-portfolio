@@ -4,6 +4,8 @@ import sendEmail from '../../services/email';
 
 export default function Contact() {
 
+    const [isDisabled, setIsDisabled] = React.useState(false)
+
     const [fields, setFields] = React.useState({
         fullname: '',
         email: '',
@@ -130,7 +132,8 @@ export default function Contact() {
                                 text-center rounded-lg 
                                 text-secondary bg-primary
                                 dark:bg-secondary dark:text-primary
-                                hover:dark:bg-accent">
+                                hover:dark:bg-accent"
+                                disabled={isDisabled}>
                                 Enviar Mensagem
                             </button>
                         </AnimationOnScroll>
