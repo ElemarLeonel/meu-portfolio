@@ -18,9 +18,9 @@ export default function Contact() {
         setFields(fields)
     }
 
-    function handleFormSubmit(event) {
+    async function handleFormSubmit(event) {
         event.preventDefault()
-        sendEmail(fields)
+        await sendEmail(fields)
 
         setFields({
             fullname: '',
