@@ -1,21 +1,21 @@
 import ElemarPerfil from '../../assets/images/ElemarPerfil.webp';
+import './index.css';
+import Curriculo from '../../assets/curriculo.pdf'
 
 export default function Hero() {
     return (
-        <div className="hero min-h-screen bg-accent dark:bg-primary">
-            <div className="hero-content flex-col lg:flex-row-reverse">
+        <header className="hero__main">
+            <div className="hero__content">
                 <img src={ElemarPerfil}
-                    className="w-auto sm:max-w-sm rounded-lg shadow-2xl
-                dark:border-4 dark:border-accent"
+                    className="img-main__hero"
                     width={300}
-                    height={300} 
-                    alt="Foto do Desenvolvedor Elemar Leonel com terno"/>
-                <div className="flex flex-col items-center md:items-start">
-                    <h1 className="text-5xl font-bold font-sans text-primary
-                    dark:text-secondary">
+                    height={300}
+                    alt="Foto do Desenvolvedor Elemar Leonel com terno" />
+                <div className="details__hero">
+                    <h1 className="my-name__hero">
                         Elemar Leonel
                     </h1>
-                    <p className="py-6 font-sans text-primary dark:text-accent">
+                    <p className="description__hero">
                         Sou um desenvolvedor front-end apaixonado por criar
                         interfaces de usuário elegantes e responsivas.
                         Possuo conhecimentos sólidos em HTML, CSS e Javascript e
@@ -23,14 +23,12 @@ export default function Hero() {
                         em busca de novas tecnologias e tendências e procuro
                         aperfeiçoar constantemente minhas habilidades.
                     </p>
-                    <button className="btn btn-secondary w-3/4 md:w-1/2">
-                        <a href="https://api.whatsapp.com/send?phone=5569981066962&text=Oi."
-                            className="text-primary font-sans dark:text-primary">
-                            Entre em Contato
-                        </a>
-                    </button>
+                    <a className="btn-contact__hero"
+                    href={Curriculo} download={true}>
+                        Download CV
+                    </a>
                 </div>
             </div>
-        </div>
+        </header>
     )
 }

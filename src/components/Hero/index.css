@@ -1,0 +1,35 @@
+
+header.hero__main{
+    @apply hero min-h-screen bg-accent dark:bg-primary
+}
+
+header.hero__main .hero__content{
+    @apply hero-content flex-col lg:flex-row-reverse
+}
+
+header.hero__main .hero__content .img-main__hero{
+    @apply w-auto sm:max-w-sm rounded-lg shadow-2xl dark:border-4 dark:border-accent
+}
+
+header.hero__main .hero__content .details__hero{
+   @apply flex flex-col items-center md:items-start
+}
+
+header.hero__main .hero__content .details__hero .my-name__hero{
+    @apply text-5xl font-bold font-sans text-primary;
+    @apply dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-secondary dark:to-neutral
+}
+
+header.hero__main .hero__content .details__hero .description__hero{
+    @apply py-6 font-sans text-primary dark:text-secondary;
+}
+
+header.hero__main .hero__content .details__hero .btn-contact__hero{
+    @apply btn btn-secondary w-1/4 text-primary font-sans;
+    @apply dark:text-accent dark:bg-gradient-to-l dark:from-primary dark:to-secondary dark:border-none
+}
+
+header.hero__main .hero__content .details__hero .btn-contact__hero:hover{
+    @apply dark:bg-gradient-to-l dark:from-secondary dark:to-primary;
+    @apply dark:transition-all dark:duration-[4000ms] dark:ease-in-out
+}

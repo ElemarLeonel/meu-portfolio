@@ -1,0 +1,12 @@
+section.navbar__hero{
+    @apply navbar bg-primary
+}
+
+section.navbar__hero .navbar-start .dropdown .btn-menu__hero{
+    @apply btn btn-ghost btn-circle swap swap-rotate
+}
+
+section.navbar__hero .navbar-start .navbar-center .btn-my-name__hero{
+    @apply btn btn-ghost normal-case text-xl text-secondary 
+    hover:bg-accent hover:text-primary
+}

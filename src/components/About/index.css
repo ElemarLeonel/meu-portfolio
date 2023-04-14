@@ -1,0 +1,57 @@
+section.about{
+    @apply flex flex-col items-center bg-secondary
+    dark:bg-primary p-10 gap-5
+}
+
+section.about .title__about{
+    @apply text-3xl font-sans font-bold text-primary;
+    @apply dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r 
+    dark:from-secondary dark:to-neutral
+}
+
+section.about .details__about{
+    @apply w-[6/8] sm:w-1/2;
+}
+
+section.about .details__about .details-list__about{
+    @apply relative border-l border-accent dark:border-secondary
+}
+
+section.about .details__about .details-list__about .details-list-item__about{
+    @apply mb-10 ml-6
+}
+
+section.about .details__about .details-list__about .details-list-item__about
+.details-list-item-icon__about{
+    @apply absolute flex items-center justify-center w-8 
+    h-8 bg-accent rounded-full -left-4 ring-8 ring-accent;
+    @apply dark:ring-primary;
+    @apply dark:bg-gradient-to-r dark:from-primary dark:to-secondary dark:border-none;
+}
+
+section.about .details__about .details-list__about .details-list-item__about
+.details-list-item-title__about{
+    @apply flex items-center mb-1 ml-2 text-lg font-semibold 
+    text-primary;
+    @apply dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r 
+    dark:from-secondary dark:to-neutral
+}
+
+section.about .details__about .details-list__about .details-list-item__about
+.details-list-item-title__about .details-list-item-title-bagde__about{
+    @apply bg-accent text-primary text-sm 
+    font-medium mr-2 px-2.5 py-0.5 rounded ml-3;
+    @apply dark:bg-gradient-to-r dark:from-secondary dark:to-neutral dark:border-none;
+}
+
+section.about .details__about .details-list__about .details-list-item__about
+.details-list-item-description__about{
+    @apply mb-4 ml-2 text-base font-normal text-primary
+    dark:text-secondary
+}
+
+section.about .details__about .details-list__about .details-list-item__about
+.details-list-item-date__about{
+    @apply block mb-2 ml-2 text-sm font-normal leading-none 
+    text-accent
+}
