@@ -6,6 +6,11 @@ module.exports = {
     themes: [
       {
         mytheme: {
+          "gray-50": "#FAFAFA",
+          "gray-300": "#D4D4D4",
+          "gray-400": "#9CA3AF",
+          "gray-600": "#4B5563",
+          "gray-700": "#374151",
           "primary": "#031D44",
           "secondary": "#DAB785",
           "accent": "#FEFEFE",

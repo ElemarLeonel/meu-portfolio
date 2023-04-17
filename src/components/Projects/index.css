@@ -1,0 +1,51 @@
+section.projects{
+  @apply flex-col bg-secondary dark:bg-primary p-4
+}
+
+section.projects .header__projects{
+  @apply mb-10 mt-10
+}
+
+section.projects .header__projects .title-top__projects{
+  @apply text-primary text-center font-bold text-3xl;
+  @apply dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r 
+    dark:from-secondary dark:to-neutral
+}
+
+section.projects .content__projects{
+  @apply flex flex-row flex-wrap gap-5 justify-between mx-10 my-10
+}
+
+section.projects .content__projects .card-content__projects{
+  @apply card w-96 sm:w-1/2 md:w-1/4 bg-accent hover:bg-gray-200 shadow-xl;
+  @apply dark:bg-gradient-to-r dark:from-secondary dark:to-neutral;
+}
+
+section.projects .content__projects .card-content__projects 
+.figure-card-content__projects{
+  @apply px-10 pt-10
+}
+
+section.projects .content__projects .card-content__projects
+.body-card-content__projects{
+  @apply items-center text-center
+}
+
+section.projects .content__projects .card-content__projects
+.body-card-content__projects .title-body-card-content__projects{
+  @apply font-sans font-bold text-primary uppercase
+}
+
+section.projects .content__projects .card-content__projects
+.body-card-content__projects .description-body-card-content__projects{
+  @apply text-primary mt-2 mb-2
+}
+
+section.projects .content__projects .card-content__projects
+.body-card-content__projects .card-actions button{
+  @apply dark:bg-primary/90 dark:hover:bg-primary dark:border-none
+}
+section.projects .content__projects .card-content__projects
+.body-card-content__projects .card-actions button a{
+  @apply text-secondary hover:text-accent dark:text-secondary
+}

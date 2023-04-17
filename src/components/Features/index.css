@@ -1,0 +1,57 @@
+section.features{
+  @apply bg-primary
+}
+
+section.features .content__features{
+  @apply py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6
+}
+
+section.features .content__features .top-content__features{
+  @apply mb-8 lg:mb-16
+}
+
+section.features .content__features .top-content__features 
+.title-top-content__features{
+  @apply mb-4 text-3xl tracking-tight font-extrabold text-secondary text-center;
+  @apply dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r 
+    dark:from-secondary dark:to-neutral
+}
+
+section.features .content__features .top-content__features 
+.description-top-content__features{
+  @apply text-accent sm:text-xl text-center;
+  @apply dark:text-secondary
+}
+
+section.features .content__features .bottom-content__features{
+  @apply space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0
+}
+
+section.features .content__features .bottom-content__features
+.card-bottom-content__features{
+  @apply flex flex-col sm:items-start items-center
+}
+
+section.features .content__features .bottom-content__features
+.card-bottom-content__features .icon-card-bottom-content__features{
+  @apply flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-accent lg:h-12 lg:w-12; 
+  @apply dark:bg-primary
+}
+
+section.features .content__features .bottom-content__features
+.card-bottom-content__features .icon-card-bottom-content__features
+.fai-icon-card-bottom-content__features{
+  @apply w-5 h-5 lg:w-7 lg:h-7 text-secondary
+}
+
+section.features .content__features .bottom-content__features
+.card-bottom-content__features .title-card-bottom-content__features{
+  @apply text-secondary mb-2 text-xl font-bold;
+  @apply dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-l 
+  dark:from-neutral dark:to-secondary
+}
+
+section.features .content__features .bottom-content__features
+.card-bottom-content__features .description-card-bottom-content__features{
+  @apply text-accent sm:text-start text-center;
+}

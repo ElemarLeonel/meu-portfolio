@@ -4,38 +4,37 @@ import {
     faLinkedin,
     faInstagram
 } from "@fortawesome/free-brands-svg-icons"
+import './index.css'
 
 export default function Footer() {
     return (
-        <footer className="flex flex-col md:flex-row justify-between 
-            gap-5 p-5 bg-secondary dark:bg-primary">
-            <div className="flex flex-col md:flex-row justify-center items-center">
-                <a className="btn btn-ghost normal-case text-xl text-primary
-                    dark:text-secondary">
+        <footer className="footer">
+            <div className="container__footer">
+                <a className="btn btn-my-name-container__footer">
                     dev.elemarleonel
                 </a>
-                <p className="text-primary dark:text-accent text-center">
+                <p className="copyright-text-container__footer">
                     Copyright © 2023 - Todos os Direitos Reservados
                 </p>
             </div>
-            <div className="flex flex-row md:justify-between justify-center gap-5 p-4">
-                <a className="https://github.com/ElemarLeonel">
+            <div className="social-icons__footer">
+                <a href="https://github.com/ElemarLeonel" target="__blank"
+                aria-label="Link do Github do Desenvolvedor Elemar">
                     <FontAwesomeIcon icon={faGithub} size="2x"
-                        className="hover:text-accent text-primary
-                        dark:text-secondary dark:hover:text-accent" 
+                        className="icon-social-icons__footer" 
                         aria-label="Link do Github do Desenvolvedor Elemar"/>
                 </a>
-                <a href="https://www.linkedin.com/in/elemarleonel/"
+                <a href="https://www.linkedin.com/in/elemarleonel/" 
+                target="__blank"
                 aria-label="Link do Linkedin do Desenvolvedor Elemar">
                     <FontAwesomeIcon icon={faLinkedin} size="2x"
-                        className="hover:text-accent text-primary
-                        dark:text-secondary dark:hover:text-accent" 
+                        className="icon-social-icons__footer" 
                         aria-label="Link do Linkedin do Desenvolvedor Elemar"/>
                 </a>
-                <a href="https://www.instagram.com/dev.elemarleonel/">
+                <a href="https://www.instagram.com/dev.elemarleonel/"
+                target="__blank">
                     <FontAwesomeIcon icon={faInstagram} size="2x"
-                        className="hover:text-accent text-primary
-                        dark:text-secondary dark:hover:text-accent" 
+                        className="icon-social-icons__footer" 
                         aria-label="Link do Github do Desenvolvedor Elemar"/>
                 </a>
             </div>

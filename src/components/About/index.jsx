@@ -21,25 +21,25 @@ export default function About() {
                 </AnimationOnScroll>
             </div>
             <div className="details__about">
-                <ol className="details-list__about">
-                    <li className="details-list-item__about">
+                <ol className="list-details__about">
+                    <li className="item-list-details__about">
 
-                        <span className="details-list-item-icon__about">
+                        <span className="icon-item-list-details__about">
                             <FontAwesomeIcon icon={faPlay}
                                 className="text-primary dark:text-neutral" />
                         </span>
                         <AnimationOnScroll animateIn="animate__bounceInRight">
-                            <h3 className="details-list-item-title__about">
+                            <h3 className="title-item-list-details__about">
                                 O Início
                             </h3>
                         </AnimationOnScroll>
                         <AnimationOnScroll animateIn="animate__bounceInRight">
-                            <time className="details-list-item-date__about">
+                            <time className="date-item-list-details__about">
                                 2011
                             </time>
                         </AnimationOnScroll>
                         <AnimationOnScroll animateIn="animate__bounceInRight">
-                            <p className="details-list-item-description__about">
+                            <p className="description-item-list-details__about">
                                 Minha história começa em casa, desde aproximadamente
                                 meus 10 anos de idade, onde eu comecei a dar meus primeiros
                                 passos mexendo no computador que eu tinha em casa.
@@ -50,23 +50,23 @@ export default function About() {
                             </p>
                         </AnimationOnScroll>
                     </li>
-                    <li className="details-list-item__about">
-                        <span className="details-list-item-icon__about">
+                    <li className="item-list-details__about">
+                        <span className="icon-item-list-details__about">
                             <FontAwesomeIcon icon={faMagnifyingGlass}
                                 className="text-primary dark:text-neutral" />
                         </span>
                         <AnimationOnScroll animateIn="animate__bounceInRight">
-                            <h3 className="details-list-item-title__about">
+                            <h3 className="title-item-list-details__about">
                                 O Descobrimento
                             </h3>
                         </AnimationOnScroll>
                         <AnimationOnScroll animateIn="animate__bounceInRight">
-                            <time className="details-list-item-date__about">
+                            <time className="date-item-list-details__about">
                                 2014
                             </time>
                         </AnimationOnScroll>
                         <AnimationOnScroll animateIn="animate__bounceInRight">
-                            <p className="details-list-item-description__about">
+                            <p className="description-item-list-details__about">
                                 Aos meus 14 anos, ingressei em uma turma de Jovem Aprendiz
                                 pela instituição SENAC aqui da minha cidade, e nesse curso,
                                 adquiri conhecimentos básicos na área de informática,
@@ -75,23 +75,23 @@ export default function About() {
                             </p>
                         </AnimationOnScroll>
                     </li>
-                    <li className="details-list-item__about">
-                        <span className="details-list-item-icon__about">
+                    <li className="item-list-details__about">
+                        <span className="icon-item-list-details__about">
                             <FontAwesomeIcon icon={faQuestion}
                                 className="text-primary dark:text-neutral" />
                         </span>
                         <AnimationOnScroll animateIn="animate__bounceInRight">
-                            <h3 className="details-list-item-title__about">
+                            <h3 className="title-item-list-details__about">
                                 Um Questionamento
                             </h3>
                         </AnimationOnScroll>
                         <AnimationOnScroll animateIn="animate__bounceInRight">
-                            <time className="details-list-item-date__about">
+                            <time className="date-item-list-details__about">
                                 2016
                             </time>
                         </AnimationOnScroll>
                         <AnimationOnScroll animateIn="animate__bounceInRight">
-                            <p className="details-list-item-description__about">
+                            <p className="description-item-list-details__about">
                                 Ao final do meu 3º ano do Ensino Médio, com uns 17 anos
                                 de idade, um colega me falou que iria fazer uma faculdade
                                 na área de tecnologia e perguntou se iria fazer junto com ele.
@@ -105,26 +105,26 @@ export default function About() {
                             </p>
                         </AnimationOnScroll>
                     </li>
-                    <li className="details-list-item__about">
-                        <span className="details-list-item-icon__about">
+                    <li className="item-list-details__about">
+                        <span className="icon-item-list-details__about">
                             <FontAwesomeIcon icon={faArchway}
                                 className="text-primary dark:text-neutral" />
                         </span>
                         <AnimationOnScroll animateIn="animate__bounceInRight">
-                            <h3 className="details-list-item-title__about">
+                            <h3 className="title-item-list-details__about">
                                 No Caminho
-                                <span className="details-list-item-title-bagde__about">
+                                <span className="badge-title-item-list-details__about">
                                     Atual
                                 </span>
                             </h3>
                         </AnimationOnScroll>
                         <AnimationOnScroll animateIn="animate__bounceInRight">
-                            <time className="details-list-item-date__about">
+                            <time className="date-item-list-details__about">
                                 2023
                             </time>
                         </AnimationOnScroll>
                         <AnimationOnScroll animateIn="animate__bounceInRight">
-                            <p className="details-list-item-description__about">
+                            <p className="description-item-list-details__about">
                                 Atualmente, trabalho como Técnico em Informática em uma
                                 empresa aqui na cidade onde resido. Propus o desafio a
                                 mim mesmo, e conversando com meus superiores,

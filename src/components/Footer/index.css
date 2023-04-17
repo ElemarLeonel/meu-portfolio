@@ -1,0 +1,29 @@
+footer.footer{
+  @apply flex flex-col md:flex-row justify-between 
+  gap-5 p-5 bg-secondary dark:bg-primary
+}
+
+footer.footer .container__footer{
+  @apply flex flex-col md:flex-row justify-center items-center
+}
+
+footer.footer .container__footer .btn-my-name-container__footer{
+  @apply btn-ghost normal-case text-xl text-primary;
+  @apply dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-l 
+    dark:from-secondary dark:to-neutral
+}
+
+footer.footer .container__footer .copyright-text-container__footer{
+  @apply text-primary text-center;
+  @apply dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r 
+    dark:from-secondary dark:to-neutral
+}
+
+footer.footer .social-icons__footer{
+  @apply flex flex-row md:justify-between justify-center gap-5 p-4
+}
+
+footer.footer .social-icons__footer .icon-social-icons__footer{
+  @apply hover:text-accent text-primary;
+  @apply dark:text-secondary dark:hover:text-accent
+}

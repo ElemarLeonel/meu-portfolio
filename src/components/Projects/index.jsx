@@ -1,39 +1,37 @@
 import { projects } from "./projects"
 import { AnimationOnScroll } from "react-animation-on-scroll"
+import './index.css'
 
 export default function Projects() {
     return (
-        <section className="flex-col bg-secondary dark:bg-primary p-4" id="projects">
-            <div className="mb-10 mt-10">
+        <section className="projects" id="projects">
+            <div className="header__projects">
                 <AnimationOnScroll animateIn="animate__zoomIn">
-                    <h1 className="text-primary text-center font-bold text-3xl
-                    dark:text-secondary">
+                    <h2 className="title-top__projects">
                         Projetos
-                    </h1>
+                    </h2>
                 </AnimationOnScroll>
             </div>
-            <div className="flex flex-row flex-wrap gap-5 justify-between mx-10 my-10">
+            <div className="content__projects">
                 {projects.map((project) => (
-                    <div className="card w-96 sm:w-1/2 md:w-1/4 bg-accent 
-                    hover:bg-gray-200 shadow-xl" key={project.key}>
+                    <div className="card-content__projects" key={project.key}>
                         <AnimationOnScroll animateIn="animate__fadeInUp">
-                            <figure className="px-10 pt-10">
+                            <figure className="figure-card-content__projects">
                                 <img src={project.image} alt={project.alt}
                                     className="rounded-xl" 
                                     width={project.width}
                                     height={project.height} />
                             </figure>
-                            <div className="card-body items-center text-center">
-                                <h2 className="card-title font-sans font-bold text-primary">
+                            <div className="card-body body-card-content__projects">
+                                <h2 className="card-title title-body-card-content__projects">
                                     {project.title}
                                 </h2>
-                                <p className="text-primary mt-2 mb-2">
+                                <p className="description-body-card-content__projects">
                                     {project.description}
                                 </p>
                                 <div className="card-actions">
                                     <button className="btn btn-primary">
-                                        <a href={project.link}
-                                            className="text-secondary hover:text-accent">
+                                        <a href={project.link}>
                                             Acesse Agora
                                         </a>
                                     </button>

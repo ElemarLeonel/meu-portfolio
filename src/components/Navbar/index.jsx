@@ -16,7 +16,7 @@ function Navbar() {
     }
 
     return (
-        <section className="navbar__hero">
+        <nav className="navbar__hero">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label
@@ -58,7 +58,7 @@ function Navbar() {
             <div className="navbar-end">
                 <Switcher />
             </div>
-        </section>
+        </nav>
 
     );
 }
