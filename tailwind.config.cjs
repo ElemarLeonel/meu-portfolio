@@ -24,7 +24,7 @@ module.exports = {
     fontFamily: {
       sans: ['Raleway', 'sans-serif'],
       cursive: ['Righteous', 'cursive']
-    }
+    },
   },
   plugins: [
     require("@tailwindcss/typography"),

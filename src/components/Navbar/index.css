@@ -7,8 +7,7 @@ nav.navbar__hero .navbar-start .dropdown .btn-menu__hero{
 }
 
 nav.navbar__hero .navbar-center .btn-my-name__hero{
-    @apply btn btn-ghost normal-case text-xl text-secondary 
-    hover:bg-accent hover:text-primary;
-    @apply dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-l 
-    dark:from-secondary dark:to-neutral
+    @apply btn btn-ghost normal-case text-xl;
+    @apply text-transparent bg-clip-text bg-gradient-to-l 
+    from-secondary to-neutral
 }

@@ -7,9 +7,11 @@ section.projects .header__projects{
 }
 
 section.projects .header__projects .title-top__projects{
-  @apply text-primary text-center font-bold text-3xl;
+  @apply text-center font-bold text-3xl;
+  @apply text-transparent bg-clip-text bg-gradient-to-tr
+  from-primary to-gray-600;
   @apply dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r 
-    dark:from-secondary dark:to-neutral
+  dark:from-secondary dark:to-neutral
 }
 
 section.projects .content__projects{
@@ -17,7 +19,8 @@ section.projects .content__projects{
 }
 
 section.projects .content__projects .card-content__projects{
-  @apply card w-96 sm:w-1/2 md:w-1/4 bg-accent hover:bg-gray-200 shadow-xl;
+  @apply card w-96 sm:w-1/2 md:w-1/4 shadow-xl;
+  @apply bg-white/40 backdrop-blur-md;
   @apply dark:bg-gradient-to-r dark:from-secondary dark:to-neutral;
 }
 

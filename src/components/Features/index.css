@@ -13,14 +13,14 @@ section.features .content__features .top-content__features{
 section.features .content__features .top-content__features 
 .title-top-content__features{
   @apply mb-4 text-3xl tracking-tight font-extrabold text-secondary text-center;
-  @apply dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r 
-    dark:from-secondary dark:to-neutral
+  @apply text-transparent bg-clip-text bg-gradient-to-r 
+    from-secondary to-neutral
 }
 
 section.features .content__features .top-content__features 
 .description-top-content__features{
   @apply text-accent sm:text-xl text-center;
-  @apply dark:text-secondary
+  @apply text-secondary
 }
 
 section.features .content__features .bottom-content__features{
@@ -35,7 +35,7 @@ section.features .content__features .bottom-content__features
 section.features .content__features .bottom-content__features
 .card-bottom-content__features .icon-card-bottom-content__features{
   @apply flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-accent lg:h-12 lg:w-12; 
-  @apply dark:bg-primary
+  @apply bg-primary
 }
 
 section.features .content__features .bottom-content__features
@@ -47,8 +47,8 @@ section.features .content__features .bottom-content__features
 section.features .content__features .bottom-content__features
 .card-bottom-content__features .title-card-bottom-content__features{
   @apply text-secondary mb-2 text-xl font-bold;
-  @apply dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-l 
-  dark:from-neutral dark:to-secondary
+  @apply text-transparent bg-clip-text bg-gradient-to-l 
+  from-neutral to-secondary
 }
 
 section.features .content__features .bottom-content__features

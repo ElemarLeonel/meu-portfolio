@@ -1,5 +1,5 @@
 section.contact{
-  @apply bg-accent;
+  @apply bg-neutral;
   @apply dark:bg-primary
 }
 
@@ -8,10 +8,12 @@ section.contact .header__contact{
 }
 
 section.contact .header__contact .title-header__contact{
-  @apply mb-4 text-3xl tracking-tight font-extrabold 
-  text-center text-primary;
+  @apply mb-4 text-3xl tracking-tight font-bold 
+  text-center;
+  @apply text-transparent bg-clip-text bg-gradient-to-br
+  from-gray-700 to-primary;
   @apply dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r 
-    dark:from-secondary dark:to-neutral 
+  dark:from-secondary dark:to-neutral 
 }
 
 section.contact .header__contact .description-header__contact{
@@ -28,7 +30,9 @@ section.contact .form__contact .container-form__contact{
 }
 
 section.contact .form__contact .container-form__contact label{
-  @apply block mb-2 text-sm font-bold text-primary dark:text-secondary
+  @apply block mb-2 text-sm font-bold text-primary;
+  @apply dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r 
+  dark:from-secondary dark:to-neutral
 }
 
 section.contact .form__contact .container-form__contact input,

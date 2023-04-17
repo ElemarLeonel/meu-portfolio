@@ -1,6 +1,6 @@
 
 header.hero__main{
-    @apply hero min-h-screen bg-accent dark:bg-primary
+    @apply hero min-h-screen bg-neutral dark:bg-primary
 }
 
 header.hero__main .content-hero__main{
@@ -18,7 +18,9 @@ header.hero__main .content-hero__main .content-hero-details__main{
 
 header.hero__main .content-hero__main .content-hero-details__main 
 .content-hero-details-my-name__main{
-    @apply text-5xl font-bold font-sans text-primary;
+    @apply text-4xl font-bold font-sans;
+    @apply text-transparent bg-clip-text bg-gradient-to-tl 
+    from-primary to-secondary;
     @apply dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r 
     dark:from-secondary dark:to-neutral
 }
@@ -30,13 +32,17 @@ header.hero__main .content-hero__main .content-hero-details__main
 
 header.hero__main .content-hero__main .content-hero-details__main 
 .content-hero-details-btn-contact__hero{
-    @apply btn btn-secondary w-1/2 md:w-1/4 text-primary font-sans;
-    @apply dark:text-accent dark:bg-gradient-to-l dark:from-primary 
+    @apply btn btn-secondary w-1/2 md:w-1/4 font-sans;
+    @apply text-primary bg-gradient-to-tr from-secondary 
+    to-neutral border-none;
+    @apply dark:text-accent dark:bg-gradient-to-tl dark:from-primary 
     dark:to-secondary dark:border-none
 }
 
 header.hero__main .content-hero__main .content-hero-details__main 
 .content-hero-details-btn-contact__hero:hover{
-    @apply dark:bg-gradient-to-l dark:from-secondary dark:to-primary;
-    @apply dark:transition-all dark:duration-[4000ms] dark:ease-in-out
+    @apply text-primary bg-gradient-to-tr from-neutral 
+    to-secondary border-none;
+    @apply dark:bg-gradient-to-tl dark:from-secondary dark:to-primary;
+    @apply transition-all duration-[4000ms] ease-in-out
 }

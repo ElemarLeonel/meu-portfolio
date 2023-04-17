@@ -4,7 +4,9 @@ section.about{
 }
 
 section.about div .title__about{
-    @apply text-3xl font-sans font-bold text-primary;
+    @apply text-3xl font-sans font-bold;
+    @apply text-transparent bg-clip-text bg-gradient-to-tr 
+    from-primary to-gray-600;
     @apply dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r 
     dark:from-secondary dark:to-neutral
 }
@@ -15,8 +17,6 @@ section.about .details__about{
 
 section.about .details__about .list-details__about{
     @apply relative border-l border-accent dark:border-secondary;
-    @apply dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r 
-    dark:from-secondary dark:to-neutral
 }
 
 section.about .details__about .list-details__about .item-list-details__about{
@@ -26,24 +26,29 @@ section.about .details__about .list-details__about .item-list-details__about{
 section.about .details__about .list-details__about .item-list-details__about
 .icon-item-list-details__about{
     @apply absolute flex items-center justify-center w-8 
-    h-8 bg-accent rounded-full -left-4 ring-8 ring-accent;
-    @apply dark:ring-primary;
-    @apply dark:bg-gradient-to-r dark:from-primary dark:to-secondary dark:border-none;
+    h-8 rounded-full -left-4 ring-8;
+    @apply ring-secondary bg-gradient-to-r
+    from-secondary to-neutral border-none;
+    @apply dark:ring-primary dark:bg-gradient-to-r 
+    dark:from-primary dark:to-secondary dark:border-none;
 }
 
 section.about .details__about .list-details__about .item-list-details__about
 .title-item-list-details__about{
-    @apply flex items-center mb-1 ml-2 text-lg font-semibold 
-    text-primary;
+    @apply flex items-center mb-1 ml-2 text-lg font-semibold;
+    @apply text-transparent bg-clip-text bg-gradient-to-r 
+    from-primary to-neutral;
     @apply dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r 
     dark:from-secondary dark:to-neutral
 }
 
 section.about .details__about .list-details__about .item-list-details__about
 .title-item-list-details__about .badge-title-item-list-details__about{
-    @apply bg-accent text-primary text-sm 
+    @apply text-accent text-sm 
     font-medium mr-2 px-2.5 py-0.5 rounded ml-3;
-    @apply dark:bg-gradient-to-r dark:from-secondary dark:to-neutral dark:border-none;
+    @apply bg-gradient-to-r from-secondary via-gray-700 to-primary border-none;
+    @apply dark:text-primary dark:font-semibold dark:bg-gradient-to-r 
+    dark:from-secondary dark:to-neutral dark:border-none;
 }
 
 section.about .details__about .list-details__about .item-list-details__about
@@ -55,5 +60,5 @@ section.about .details__about .list-details__about .item-list-details__about
 section.about .details__about .list-details__about .item-list-details__about
 .date-item-list-details__about{
     @apply block mb-2 ml-2 text-sm font-normal leading-none 
-    text-accent
+    text-gray-700 dark:text-accent
 }
