@@ -10,7 +10,8 @@ export default function Footer() {
     return (
         <footer className="footer">
             <div className="container__footer">
-                <a className="btn btn-my-name-container__footer">
+                <a className="btn btn-my-name-container__footer"
+                href="https://elemarleonel.com.br">
                     dev.elemarleonel
                 </a>
                 <p className="copyright-text-container__footer">
