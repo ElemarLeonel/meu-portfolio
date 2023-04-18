@@ -1,4 +1,5 @@
 section.about{
+    content-visibility: auto;
     @apply flex flex-col items-center bg-secondary
     dark:bg-primary p-10 gap-5
 }

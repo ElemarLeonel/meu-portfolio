@@ -1,4 +1,5 @@
 section.contact{
+  content-visibility: auto;
   @apply bg-neutral;
   @apply dark:bg-primary
 }

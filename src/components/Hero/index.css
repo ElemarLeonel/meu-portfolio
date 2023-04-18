@@ -1,5 +1,5 @@
-
 header.hero__main{
+    content-visibility: auto;
     @apply hero min-h-screen bg-neutral dark:bg-primary
 }
 

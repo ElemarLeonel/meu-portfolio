@@ -1,13 +1,14 @@
 nav.navbar__hero{
-    @apply navbar bg-primary
+  content-visibility: auto;
+  @apply navbar bg-primary
 }
 
 nav.navbar__hero .navbar-start .dropdown .btn-menu__hero{
-    @apply btn btn-ghost btn-circle swap swap-rotate
+  @apply btn btn-ghost btn-circle swap swap-rotate
 }
 
 nav.navbar__hero .navbar-center .btn-my-name__hero{
-    @apply btn btn-ghost normal-case text-xl;
-    @apply text-transparent bg-clip-text bg-gradient-to-l 
+  @apply btn btn-ghost normal-case text-xl;
+  @apply text-transparent bg-clip-text bg-gradient-to-l 
     from-secondary to-neutral
 }

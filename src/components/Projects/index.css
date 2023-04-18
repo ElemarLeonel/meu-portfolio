@@ -1,4 +1,5 @@
 section.projects{
+  content-visibility: auto;
   @apply flex-col bg-secondary dark:bg-primary p-4
 }
 
