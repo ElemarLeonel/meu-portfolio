@@ -51,7 +51,7 @@ function Navbar() {
                 </div>
             </div>
             <div className="navbar-center">
-                <a className="btn-my-name__hero">
+                <a className="btn-my-name__hero" href="https://elemarleonel.com.br">
                     dev.elemarleonel
                 </a>
             </div>
